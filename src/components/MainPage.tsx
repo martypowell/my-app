@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import EditIcon from "@mui/icons-material/Edit";
 
-const MainPage = ({}) => {
+const MainPage = () => {
   const { data, isLoading, error } = useQuery("movies", () =>
     fetch("/api/movies").then((res) => res.json())
   );
@@ -22,7 +22,7 @@ const MainPage = ({}) => {
       ) : (
         <List>
           {data.movies.map((movie: Movie, index: Number) => {
-            const { id, name, year } = movie;
+            const { id, name } = movie;
 
             return (
               <ListItem
