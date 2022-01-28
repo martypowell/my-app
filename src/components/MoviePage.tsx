@@ -17,6 +17,7 @@ const MoviePage = () => {
       <h1>{data.movie.name}</h1>
       <p>{data.movie.year}</p>
       <Link to={`/movies/${id}/edit`}>Edit</Link>
+      <p dangerouslySetInnerHTML={{ __html: data.movie.description }} />
     </div>
   );
 };

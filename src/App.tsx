@@ -56,23 +56,25 @@ export default function App() {
       <AppBar position="static">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <Typography
-              variant="h5"
-              noWrap
-              component="div"
-              sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
-            >
-              <span
-                style={{
-                  background: "white",
-                  color: "#009688",
-                  padding: 10,
-                  borderRadius: 10,
-                }}
+            <a href="/" style={{ textDecoration: "none" }}>
+              <Typography
+                variant="h5"
+                noWrap
+                component="div"
+                sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
               >
-                MMDB
-              </span>
-            </Typography>
+                <span
+                  style={{
+                    background: "white",
+                    color: "#009688",
+                    padding: 10,
+                    borderRadius: 10,
+                  }}
+                >
+                  MMDB
+                </span>
+              </Typography>
+            </a>
           </Toolbar>
         </Container>
       </AppBar>
